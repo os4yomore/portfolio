@@ -6,7 +6,7 @@ const About = () => {
     <section id="about" className="py-20 px-6 relative z-10">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header */}
+        {/* header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-pink-900 mb-6 font-serif">
             The Story So Far
@@ -17,10 +17,10 @@ const About = () => {
           </p>
         </div>
 
-        {/* The Bento Grid Layout */}
+        {/* cute bento layout theme #thankyoujapan */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(180px,auto)]">
           
-          {/* Card 1: The Professional (Span 2 columns) */}
+          {/* Card 1: The Professional  */}
           <div className="md:col-span-2 row-span-2 bg-white/40 backdrop-blur-md p-10 rounded-3xl border border-white/60 shadow-xl hover:shadow-pink-200/50 transition-all group">
             <div className="flex items-center gap-3 mb-6">
               <FaGraduationCap className="text-4xl text-pink-600" />
@@ -86,7 +86,7 @@ const About = () => {
              </p>
           </div>
 
-          {/* Card 4: Music */}
+          {/* Card 4: Music I loveeee */}
           <div className="bg-white/40 backdrop-blur-md p-8 rounded-3xl border border-white/60 shadow-lg flex flex-col justify-center items-center text-center hover:scale-[1.01] transition-transform">
             <FaMusic className="text-5xl text-pink-500 mb-4" />
             <h3 className="font-bold text-pink-800 text-xl mb-2">The Soundtrack</h3>
@@ -98,7 +98,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* Card 5: Math & Kitchen */}
+          {/* Card 5: Math & My Kitchen Rules*/}
           <div className="md:col-span-2 bg-white/60 backdrop-blur-md p-10 rounded-3xl border border-white/60 shadow-xl flex flex-col md:flex-row gap-10 items-start">
             <div className="flex-1 space-y-4">
               <div className="flex items-center gap-3">
@@ -125,7 +125,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* Card 6: Random Facts (NEW - Full Width) */}
+          {/* Card 6: Random Facts bout me */}
           <div className="md:col-span-3 bg-pink-900 text-pink-100 p-8 rounded-3xl shadow-xl">
              <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 

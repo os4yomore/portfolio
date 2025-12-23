@@ -50,7 +50,7 @@ const Projects = () => {
     <section id="projects" className="py-20 px-6 relative z-10">
       <div className="max-w-7xl mx-auto">
         
-        {/* Section Header */}
+        {/*  Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-pink-900 mb-6 font-serif">
             My Projects
@@ -60,15 +60,15 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Projects Grid */}
+        {/* Projects Grid, again, #thankyoujapan */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index} 
-              // Logic to span 2 columns if it's the last item and we have an odd number (5)
+              // logic to span 2 columns if it's the last item and we have an odd number (5)
               className={`bg-white/40 backdrop-blur-md rounded-3xl border border-white/60 p-8 shadow-xl hover:shadow-pink-200/50 hover:-translate-y-2 transition-all duration-300 group flex flex-col ${index === 4 ? 'md:col-span-2 md:w-2/3 md:mx-auto' : ''}`}
             >
-              {/* Card Header: Icon + Type */}
+              {/* card header: icon + type */}
               <div className="flex justify-between items-start mb-6">
                 <div className="p-3 bg-pink-100 rounded-2xl text-pink-600 group-hover:bg-pink-600 group-hover:text-white transition-colors">
                   {project.icon || <FaFolder className="text-2xl" />}
@@ -85,7 +85,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Content */}
+              {/* content */}
               <h3 className="text-2xl font-bold text-pink-900 mb-3 group-hover:text-pink-600 transition-colors">
                 {project.title}
               </h3>
@@ -93,7 +93,7 @@ const Projects = () => {
                 {project.description}
               </p>
 
-              {/* Tech Stack Tags */}
+              {/* tech Stack tags */}
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.tech.map((tech, i) => (
                   <span key={i} className="px-3 py-1 bg-white/60 text-pink-700 text-sm font-medium rounded-lg border border-pink-100">
@@ -102,7 +102,7 @@ const Projects = () => {
                 ))}
               </div>
 
-              {/* Footer: Links */}
+              {/* footer: links */}
               <div className="flex items-center gap-4 pt-6 border-t border-pink-200/50 mt-auto">
                 <a 
                   href={project.github} 

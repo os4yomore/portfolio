@@ -17,7 +17,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           
-          {/* Left Column: Contact Info */}
+          {/* left side contact info*/}
           <div className="space-y-8">
             <div className="bg-white/40 backdrop-blur-md p-8 rounded-3xl border border-white/60 shadow-xl">
               <h3 className="text-2xl font-bold text-pink-800 mb-6">Contact Information</h3>
@@ -34,7 +34,7 @@ const Contact = () => {
                 </a>
 
                 <a 
-                  href="https://www.linkedin.com/in/rutholotu/" // Update this link!
+                  href="https://www.linkedin.com/in/rutholotu/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 text-pink-900/80 hover:text-pink-600 transition-colors group"
@@ -46,7 +46,7 @@ const Contact = () => {
                 </a>
 
                 <a 
-                  href="https://github.com/os4yomore" // Update this link!
+                  href="https://github.com/os4yomore" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 text-pink-900/80 hover:text-pink-600 transition-colors group"
@@ -59,7 +59,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* "Open to Work" Card */}
+            {/* pls employ me i'm begging */}
             <div className="bg-pink-800 text-pink-100 p-8 rounded-3xl shadow-xl">
                <h3 className="text-xl font-bold mb-4">Availability</h3>
                <p className="opacity-90 leading-relaxed mb-4">
@@ -71,7 +71,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Right Column: The Form */}
+          {/* fill this form to get to me */}
           <form 
             action="mailto:osayomoreolotu@gmail.com" 
             method="post" 

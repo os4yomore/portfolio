@@ -5,7 +5,7 @@ const Hero = () => {
     <section id="hero" className="min-h-screen flex items-center justify-center pt-16 md:pt-0 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         
-        {/* Left Side: Text */}
+        {/* intro text */}
         <div className="text-center md:text-left space-y-6 animate-fade-in-up">
           <h2 className="text-xl md:text-2xl font-medium text-pink-600">
             Hey there! I'm
@@ -19,7 +19,7 @@ const Hero = () => {
             A Computer Science student trying to tell little (and big!) scraps of metal what to do.
           </p>
 
-          {/* Buttons */}
+          {/* buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
             <a 
               href="#projects" 
@@ -35,7 +35,7 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Social Links  */}
+          {/* socials  */}
           <div className="flex justify-center md:justify-start space-x-6 pt-6">
              <a href="https://github.com/os4yomore" className="text-2xl text-pink-400 hover:text-pink-700 transition-colors"><FaGithub/></a>
              <a href="https://www.linkedin.com/in/rutholotu/" className="text-2xl text-pink-400 hover:text-pink-700 transition-colors"><FaLinkedin/></a>
@@ -43,13 +43,13 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Side: Image */}
+        {/* right side: image */}
         <div className="relative flex justify-center items-center">
           {/* Decorative Blob Background */}
           <div className="absolute w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
           <div className="absolute w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 -right-4"></div>
           
-          {/* The Image (Round container) */}
+          {/* my circular face container */}
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-white shadow-2xl overflow-hidden">
             
             <img 
