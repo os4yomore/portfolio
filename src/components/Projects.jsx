@@ -1,4 +1,5 @@
 import { FaGithub, FaExternalLinkAlt, FaFolder, FaFingerprint, FaUtensils, FaChartLine, FaTerminal } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const projects = [
@@ -50,7 +51,7 @@ const Projects = () => {
     <section id="projects" className="py-20 px-6 relative z-10">
       <div className="max-w-7xl mx-auto">
         
-        {/*  Header */}
+        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-pink-900 mb-6 font-serif">
             My Projects
@@ -104,15 +105,26 @@ const Projects = () => {
 
               {/* footer: links */}
               <div className="flex items-center gap-4 pt-6 border-t border-pink-200/50 mt-auto">
-                <a 
-                  href={project.github} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-pink-800 font-bold hover:text-pink-500 transition-colors"
-                >
-                  <FaGithub className="text-xl" /> 
-                  <span>View Code</span>
-                </a>
+                {/* if it's the biometric project, show "View Case Study" button */}
+                {project.title.includes("Biometric") ? (
+                    <Link 
+                      to="/project/biometric"
+                      className="flex items-center gap-2 text-pink-600 font-bold hover:text-pink-800 transition-colors"
+                    >
+                      <FaExternalLinkAlt /> View Case Study
+                    </Link>
+                ) : (
+                    // otherwise show standard GitHub link
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-pink-800 font-bold hover:text-pink-500 transition-colors"
+                    >
+                      <FaGithub className="text-xl" /> 
+                      <span>View Code</span>
+                    </a>
+                )}
               </div>
 
             </div>

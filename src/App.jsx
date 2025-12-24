@@ -1,14 +1,31 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ProjectDetails from "./components/ProjectDetails";
+import { useEffect } from 'react';
 
-export default function App() {
+// Create a separate Home component for cleanliness
+const Home = () => {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+    </>
+  );
+};
+
+// This wrapper handles the background animation for the whole app
+const AppLayout = ({ children }) => {
   return (
     <main className="relative min-h-screen text-pink-800 bg-pink-50 overflow-hidden">
-      
       {/* cute lil animation blobs for my backgorund*/}
       <div className="fixed inset-0 z-0 pointer-events-none">
         {/* blob 1: top left */}
@@ -20,16 +37,31 @@ export default function App() {
         {/* blob 4: bottom right */}
         <div className="absolute bottom-[-10%] right-20 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-4000"></div>
       </div>
-
-      {/*  (z-10 ensures text is above the blobs) */}
+      {/* CONTENT LAYER */}
       <div className="relative z-10">
-        <Navbar />
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
-        <Footer />
+        {children}
       </div>
     </main>
   );
+};
+
+// Scroll to top when route changes
+const ScrollToTop = () => {
+   // This ensures that when you click a link, the new page starts at the top
+   useEffect(() => window.scrollTo(0, 0), []);
+   return null;
 }
+
+export default function App() {
+  return (
+    <Router>
+      <AppLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/biometric" element={<><ScrollToTop/><ProjectDetails /></>} />
+        </Routes>
+      </AppLayout>
+    </Router>
+  );
+}
+

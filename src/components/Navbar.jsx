@@ -63,10 +63,10 @@ const Navbar = () => {
 
           {/* socials icons */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://github.com/rutholotu" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-900 hover:-translate-y-1 transition-transform duration-300 text-xl">
+            <a href="https://github.com/os4yomore" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-900 hover:-translate-y-1 transition-transform duration-300 text-xl">
                 <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/ruth-olotu" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-900 hover:-translate-y-1 transition-transform duration-300 text-xl">
+            <a href="https://www.linkedin.com/in/rutholotu/" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-900 hover:-translate-y-1 transition-transform duration-300 text-xl">
                 <FaLinkedin />
             </a>
           </div>
